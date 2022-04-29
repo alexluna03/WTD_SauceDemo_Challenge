@@ -7,3 +7,4 @@
 4. Run 'npm run cypress:run' to execute the tests in CLI
 5. You may need to delete reports directory first to avoid duplicated results 
 6. To create HTML report execute 'npm run generate:tests:report'
+7. Report is under /cypress/reports/TestResultsReport.html, open it with your prefered web browser
