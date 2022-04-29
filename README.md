@@ -6,4 +6,4 @@
 3. There are a lot dependencies that are not updated frequently in parallel with cypress. So while installing if you are seeing conflicts use 'npm i --force'.
 4. Run 'npm run cypress:run' to execute the tests in CLI
 5. You may need to delete reports directory first to avoid duplicated results 
-6. To create HTML report execute 'generate:tests:report'
+6. To create HTML report execute 'npm run generate:tests:report'
