@@ -1,0 +1,14 @@
+{
+    "baseUrl": "https://www.saucedemo.com/",
+    "chromeWebSecurity": false,
+
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "TestResults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+    }
+}

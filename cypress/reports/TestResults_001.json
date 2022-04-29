@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-29T16:08:54.426Z",
+    "end": "2022-04-29T16:08:57.601Z",
+    "duration": 3175,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa697e1c-d4b6-48df-ae89-c5e75a6a9c37",
+      "title": "",
+      "fullFile": "cypress/integration/SauceDemo/tests/login.spec.js",
+      "file": "cypress/integration/SauceDemo/tests/login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "30ad4192-bffc-4ce5-ac46-87388a77dfcc",
+          "title": "Test suite to run test scenarios for Login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should log in to Sauce Demo",
+              "fullTitle": "Test suite to run test scenarios for Login page should log in to Sauce Demo",
+              "timedOut": null,
+              "duration": 992,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login(_parameters.default.validUser, _parameters.default.validPassword);\n_products.default.titlePage.should(\"be.visible\").should(\"have.text\", _parameters.default.titleProducts);",
+              "err": {},
+              "uuid": "c7fbdca6-2631-4c3a-b472-ab7dc4bc4491",
+              "parentUUID": "30ad4192-bffc-4ce5-ac46-87388a77dfcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should not log in to Sauce Demo and display error message",
+              "fullTitle": "Test suite to run test scenarios for Login page should not log in to Sauce Demo and display error message",
+              "timedOut": null,
+              "duration": 780,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login(_parameters.default.noValidUser, _parameters.default.noValidPassword);\n_login.default.errorMessage.should(\"be.visible\");",
+              "err": {},
+              "uuid": "c910af17-94af-4488-ad35-5f68bb3989db",
+              "parentUUID": "30ad4192-bffc-4ce5-ac46-87388a77dfcc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should log out from Sauce Demo",
+              "fullTitle": "Test suite to run test scenarios for Login page should log out from Sauce Demo",
+              "timedOut": null,
+              "duration": 1312,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login(_parameters.default.validUser, _parameters.default.validPassword);\n_products.default.titlePage.should(\"be.visible\").should(\"have.text\", _parameters.default.titleProducts);\n_products.default.burgerMenuButton.click();\n_products.default.logOutLink.click();\n_login.default.loginButton.should(\"be.visible\");",
+              "err": {},
+              "uuid": "7e9026ac-5657-463f-8636-1a8f51a4944f",
+              "parentUUID": "30ad4192-bffc-4ce5-ac46-87388a77dfcc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c7fbdca6-2631-4c3a-b472-ab7dc4bc4491",
+            "c910af17-94af-4488-ad35-5f68bb3989db",
+            "7e9026ac-5657-463f-8636-1a8f51a4944f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3084,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "TestResults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "TestResults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
